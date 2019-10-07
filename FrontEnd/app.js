@@ -4,8 +4,6 @@ app.config( function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/login');
  
     $stateProvider
-
-
     .state('register', {
         url: '/register',
         templateUrl: 'template/register.html',
