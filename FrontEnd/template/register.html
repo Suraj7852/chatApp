@@ -1,0 +1,14 @@
+<h1>Registration</h1>
+<div class="center" ng-controller="registerController">
+<form>
+    <label for="firstName">First Name</label><br>
+    <input class="h1" placeholder="Enter first Name" type="text" name="firstName" ng-model="firstName" required><br>
+    <label for="lastName">Last Name</label><br>
+    <input class="h1" placeholder="Enter last Name" type="text" name="lastName" ng-model="lastName" required><br>
+    <label for="email">Email</label><br>
+    <input class="h1" placeholder="Enter email address" type="email" name="email" ng-model="email" required><br>
+    <label for="password">Password</label><br>
+    <input class="h1" placeholder="Enter Password" type="password" name="password" ng-model="password" required><br>
+    <input class="button" type="submit" value="submit" ng-click="registerUser()">
+</form>
+</div>

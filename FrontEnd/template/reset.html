@@ -1,0 +1,16 @@
+<h1>Reset Password</h1>
+<div class="center" ng-contoller="forgetController">
+    <form>
+        <p>Enter Password <input type="password" ng-model="password" name="password" required ng-minlength="6"></p>
+        <span style="color: red" ng-show="resetForm.password.$dirty && resetForm.password.$invalid">
+            <span ng-show="resetForm.password.$error.required">Password is required</span>
+            <span ng-show="resetForm.password.$error.minlength">Password is sort</span>
+        </span>
+        <p>Re-Enter Password <input type="password" ng-model="confirm" name="confirm" ng-pattern="password"></p>
+        <span style="color: red" ng-show="resetForm.confirm.$dirty && resetForm.confirm.$invalid">
+            <span ng-show="resetForm.confirm.$error.required">Password is required</span>
+            <span ng-show="resetForm.confirm.$error.pattern">Password not match</span>
+        </span>
+        <button type="button" ng-click="resetUser()" ng-disabled="(resetForm.password.$invalid)||(resetForm.confirm.$invalid)">Reset</button>
+    </form>
+</div>

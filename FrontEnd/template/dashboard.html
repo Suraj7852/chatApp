@@ -1,0 +1,43 @@
+<div class="main" ng-controller="usersController">
+        <h1>DASHBOARD</h1>
+    </div>
+    
+    <body>
+        <div class="sidenav">
+            <ul>
+                <li class="board" ng-repeat = "name in data">
+                    {{name.firstName}}
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+           <input type="text" placeholder="to chat">
+            <button id="but-n" class="block">Send</button>
+            <button type="submit" class="logout" ui-sref="login">Logout</button>
+        </div>
+    </body>
+
+<!-- <body ng-contoller="usersController">
+    <div >
+            <h1>CHAT APPLICATION</h1>
+    </div>
+    <div class="row" style="margin-left:40px;">
+        <div class="col-md-3">Welcome {{loginUser}}</div>
+        <div class="col-md-offset-7" <a  ng-click="logout()">Log Out</a></div>
+    </div>
+    <div class="col-md-3" >
+        <div ng-repeat="x in allusers" ng-show='currentUser!=x.firstName'>
+             <button  type="submit" ng-click="receiver(x)">{{x.firstName}}</button>
+        </div>
+    </div>
+    <div >
+        <div>
+        <h3>Receiver Name:{{userName}}</h3>
+        </div>
+    </div>
+    <div class="col-md-9"><textarea rows="2" cols="75" ng-model="message" name="message" required>
+    </textarea></div>
+    <div class=" col-md-2"  style="margin:5px">
+        <button  type="submit" class="btn" ng-click="sendMessage()">Send Message</button>
+    </div>
+</body> -->

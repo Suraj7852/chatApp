@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.22/angular-ui-router.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-socket-io/0.7.0/socket.min.js"></script>
+
+    <script src="app.js"></script>
+    
+    <script src="controller/registerController.js"></script>
+    <script src="controller/loginController.js"></script>
+    <script src="controller/forgetController.js"></script>
+    <script src="controller/resetController.js"></script>
+    <script src="controller/usersController.js"></script>
+    
+    
+
+    <script src="service/registerService.js"></script>
+    <script src="service/loginService.js"></script>
+    <script src="service/forgetService.js"></script>
+    <script src="service/resetService.js"></script>
+    <script src="service/UserService.js"></script>
+    <script>
+        var socket = io();
+    </script>
+</head>
+
+<body ng-app="app">
+
+    <div>
+        <ui-view></ui-view>
+    </div>
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+* {box-sizing:border-box}
+h1 {
+  color:brown;
+  text-align: center;
+
+}
+
+#board{
+  text-align: center;
+  color: red;
+}
+
+.header{
+  left: 100%;
+  position: fixed;
+  border: 200px solid black;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  
+}
+
+.h1 {
+  margin: auto;
+  width: 20%;
+  border-radius: 10px;
+  padding: 5px 5px;
+  width: 200px;
+}
+
+.button {
+  background-color: rgb(46, 31, 112);
+  border: none;
+  color: #ddd;
+  padding: 10px 20px;
+  border-radius: 40px;
+  text-align: center;
+  display: inline;
+}
+
+.forget {
+  background-color: rgb(177, 153, 153);
+  border: none;
+  color: red;
+  padding: 10px 20px;
+  border-radius: 40px;
+  text-align: center;
+  display: inline;
+}
+.board {
+  text-align: left;
+  color: brown;
+  padding: 5px;
+  margin-left: 2px;
+}
+
+.btn {
+  top: 40%;
+  right: 46.5%;
+  position: absolute;
+  color: #ddd;
+  padding: 10px;
+  text-align: bottom;
+  border-radius: 40px;
+  display: inline;
+  background-color: #4CAF50;
+}
+
+.logout {
+  top: 2%;
+  right: 5%;
+  position: absolute;
+  color: #ddd;
+  padding: 20px;
+  text-align: bottom;
+  border-radius: 40px;
+  display: inline;
+  background-color: brown;
+}
+
+.textbox {
+  border: 2px;
+  position: absolute;
+
+}
+
+.box {
+  border: 6px;
+}
+
+.center {
+  text-align: center;
+}
+
+#but-n {
+  top: 95%;
+  right: 5%;
+  position: absolute;
+  background-color: rgb(10, 42, 102);
+  color: rgb(122, 78, 42);
+  border-radius: 40px;
+  display: block;
+  border: 10px;
+}
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.sidenav li {
+  padding: 20px 8px 6px 1px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav li:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+  border-bottom: 2px solid blue;
+  
+}
+
+.main input{
+  top: 95%;
+  right: 35%;
+  position: absolute;
+  color: rgb(122, 78, 42);
+  border-radius: 40px;
+  display: block;
+  border: 10px;
+  width: 50%;
+  height: 1.2cm;
+  background-color: #4CAF50;
+}
+
+.block {
+  display: block;
+  width: 10%;
+  border: none;
+  background-color: #4CAF50;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+/* .back {
+    margin: 0;
+    padding: 0;
+    background: url('../HTML/back.jpg');
+    background-size: cover;
+    background-position: unset;
+    font-family: sans-serif;
+} */
